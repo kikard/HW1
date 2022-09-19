@@ -20,6 +20,14 @@
     }
 </style>
 
+<script>
+    function changeButtonColor(newColor) {
+        let x = document.getElementById("colorable");
+        x.style.color = newColor;
+        x.style.backgroundColor = "yellow";
+    }
+</script>
+
 <body>
     <h1>HW1 submission</h1>
     <p>
@@ -35,14 +43,8 @@
 
     <br> <br>
 
-    <!-- Im NOT teaching myself JavaScript yet -->
+    <button type="button" onclick="changeButtonColor('red')" id="colorable">Click Me!</button>
 
-    <!-- <button class="btn">Click Here</button>
-        <script>
-            console.log("Hello World")
-            document.getElementsByClassName("btn").style.backgroundColor = 'red'
-    
-        </script> -->
 </body>
 
 </html>
